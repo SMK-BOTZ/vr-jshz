@@ -13,19 +13,19 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '28243586'))
+API_HASH = environ.get('API_HASH', '4022d5686b9b7a7cf8891205921a0ab3')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7421003986:AAF8q0MDtAyDEcnD9pcQmM3a7MHbCBu96kU')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7329787597').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002056677294'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002066309708').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://madarazbotz:ayizgegKjEp1WYui@cluster0.jrtfk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #---------------------------------------------------------------
@@ -107,7 +107,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "")
+URL = environ.get("FQDN", "https://megarenmaer-92447cf4dd07.herokuapp.com/")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
